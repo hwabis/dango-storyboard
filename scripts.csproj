@@ -54,6 +54,7 @@
   <ItemGroup>
     <Compile Include="Backgrounds.cs" />
     <Compile Include="Petals.cs" />
+    <Compile Include="Text.cs" />
   </ItemGroup>
   <ItemGroup />
 </Project>

@@ -1,13 +1,13 @@
 ﻿FormatVersion: 7
-Name: "Backgrounds"
-Script: "Backgrounds"
+Name: "Text"
+Script: "Text"
 Config:
   RandomSeed:
     Type: "System.Int32"
     Value: "0"
     DisplayName: "Random seed"
 Layers:
-  a5f43b6393e846d588c003fa06894973:
+  0d50b9074c0d4e758121db741d0f81b5:
     Name: "Main"
     OsbLayer: Background
     DiffSpecific: Yes

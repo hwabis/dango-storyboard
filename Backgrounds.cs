@@ -46,8 +46,8 @@ namespace StorybrewScripts
                 bg02.PositionAt(end01 - beatLength) + new CommandPosition(30, 0));
 
             double end03 = 32664;
-            bg03.Fade(end02 - beatLength, end02, 0, 0.5);
-            bg03.Fade(end03 - beatLength, end03, 0.5, 0);
+            bg03.Fade(end02 - beatLength, end02, 0, 0.75);
+            bg03.Fade(end03 - beatLength, end03, 0.75, 0);
             bg03.Scale(end02 - beatLength, end03, bg03.ScaleAt(0).X, bg03.ScaleAt(0).X + 0.03);
             bg03.Move(end02 - beatLength, end03,
                 bg03.PositionAt(end02 - beatLength),
