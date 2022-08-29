@@ -46,8 +46,8 @@ namespace StorybrewScripts
                 bg02.PositionAt(end01 - beatLength) + new CommandPosition(30, 0));
 
             double end03 = 32664;
-            bg03.Fade(end02 - beatLength, end02, 0, 1);
-            bg03.Fade(end03 - beatLength, end03, 1, 0);
+            bg03.Fade(end02 - beatLength, end02, 0, 0.5);
+            bg03.Fade(end03 - beatLength, end03, 0.5, 0);
             bg03.Scale(end02 - beatLength, end03, bg03.ScaleAt(0).X, bg03.ScaleAt(0).X + 0.03);
             bg03.Move(end02 - beatLength, end03,
                 bg03.PositionAt(end02 - beatLength),
@@ -97,7 +97,7 @@ namespace StorybrewScripts
             bg09.Rotate(end08 - beatLength, end09, 0, -0.1);
             bg09.Scale(end08 - beatLength, end09, 0.5, 0.45);
 
-            bgFinal.Fade(end09 - beatLength * 4, end09 - beatLength, 0, 0.9);
+            bgFinal.Fade(end09 - beatLength * 4, end09 - beatLength, 0, 0.8);
             bgFinal.Fade(110915, 1);
         }
 
