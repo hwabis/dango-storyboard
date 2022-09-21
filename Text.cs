@@ -12,8 +12,19 @@ namespace StorybrewScripts
             StoryboardLayer mainLayer = GetLayer("Main");
 
             var text1 = mainLayer.CreateSprite("SB/text1.png");
-            var text2 = Beatmap.Name == "Ninym's Hard" ? 
-                mainLayer.CreateSprite("SB/text2b.png") : mainLayer.CreateSprite("SB/text2.png");
+            OsbSprite text2;
+            switch (Beatmap.Name)
+            {
+                case "Ninym's Hard":
+                    text2 = mainLayer.CreateSprite("SB/text2b.png");
+                    break;
+                case "chaser01's Insane":
+                    text2 = mainLayer.CreateSprite("SB/text2c.png");
+                    break;
+                default:
+                    text2 = mainLayer.CreateSprite("SB/text2.png");
+                    break;
+            }
             var text3 = mainLayer.CreateSprite("SB/text3.png");
             var text4 = mainLayer.CreateSprite("SB/text4.png");
             var text5 = mainLayer.CreateSprite("SB/text5.png");
